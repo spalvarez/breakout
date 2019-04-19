@@ -185,7 +185,7 @@ function push:finish(shader)
 
     love.graphics.pop()
 
-    local white = love11 and 1 or 255
+    local white = love11 and 1 or 1
     love.graphics.setColor(white, white, white)
 
     --draw canvas

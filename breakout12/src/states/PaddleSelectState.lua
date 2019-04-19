@@ -80,7 +80,7 @@ function PaddleSelectState:render()
         VIRTUAL_HEIGHT - VIRTUAL_HEIGHT / 3)
    
     -- reset drawing color to full white for proper rendering
-    love.graphics.setColor(255, 255, 255, 255)
+    love.graphics.setColor(1, 1, 1, 1)
 
     -- right arrow; should render normally if we're less than 4, else
     -- in a shadowy form to let us know we're as far right as we can go
@@ -93,7 +93,7 @@ function PaddleSelectState:render()
         VIRTUAL_HEIGHT - VIRTUAL_HEIGHT / 3)
     
     -- reset drawing color to full white for proper rendering
-    love.graphics.setColor(255, 255, 255, 255)
+    love.graphics.setColor(1, 1, 1, 1)
 
     -- draw the paddle itself, based on which we have selected
     love.graphics.draw(gTextures['main'], gFrames['paddles'][2 + 4 * (self.currentPaddle - 1)],

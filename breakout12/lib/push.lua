@@ -147,7 +147,7 @@ function push:finish(shader)
 
     love.graphics.pop()
 
-    love.graphics.setColor(255, 255, 255)
+    love.graphics.setColor(1, 1, 1)
 
     --draw canvas
     love.graphics.setCanvas(_render.canvas)
