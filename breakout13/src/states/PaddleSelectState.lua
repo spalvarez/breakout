@@ -74,7 +74,7 @@ function PaddleSelectState:render()
     -- in a shadowy form to let us know we're as far left as we can go
     if self.currentPaddle == 1 then
         -- tint; give it a dark gray with half opacity
-        love.graphics.setColor(40, 40, 40, 128)
+        love.graphics.setColor(40/255, 40/255, 40/255, 128/255)
     end
     
     love.graphics.draw(gTextures['arrows'], gFrames['arrows'][1], VIRTUAL_WIDTH / 4 - 24,
@@ -87,7 +87,7 @@ function PaddleSelectState:render()
     -- in a shadowy form to let us know we're as far right as we can go
     if self.currentPaddle == 4 then
         -- tint; give it a dark gray with half opacity
-        love.graphics.setColor(40, 40, 40, 128)
+        love.graphics.setColor(40/255, 40/255, 40/255, 128/255)
     end
     
     love.graphics.draw(gTextures['arrows'], gFrames['arrows'][2], VIRTUAL_WIDTH - VIRTUAL_WIDTH / 4,
