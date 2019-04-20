@@ -128,7 +128,7 @@ function LevelMaker.createMap(level)
     if #bricks == 0 then
         return self.createMap(level)
     else
-        local numPowerups = math.random(1,#bricks) --level % 2
+        local numPowerups = #bricks--math.random(1,#bricks) --level % 2
         for i=1,numPowerups do
             local powerupbrick=math.random(1,#bricks)
             if not bricks[powerupbrick].hasPowerup then
